@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portronics</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://kit.fontawesome.com/8b134085b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../static/images/Portronics logo.avif" alt="" height="100px" width="100px">
+        <input type="text" placeholder="Search for products, brands and more" class="search">
+        <button type="submit" class="slogo"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <h1 class="login"><i class="fa-solid fa-user" style="color: #ffffff;"></i></h1>
+        <p>EARBUDS STARTING @ RS.799, SHOP NOW!</p>
+        <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+    </header>
+
+    <div class="items">
+        <ul>
+            <li class="grodiv"><a href="#">
+                    <p>Shop</p>
+                </a>
+                <div class="dropdw">
+                    <ul>
+                        <li><a href="{{url_for('Speakers',counter='1',operation='increment')}}">Speakers</a></li>
+                        <li><a href="{{url_for('Powerbanks',counter='1',operation='increment')}}">Powerbanks</a></li>
+                        <li><a href="#">Mobile Stands</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">USB Hub</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="grodiv"><a href="#">
+                    <p>New Arrivals</p>
+                </a>
+                <div class="dropdw">
+                    <ul>
+                        <li><a href="{{url_for('iphone')}}">Toad 30</a></li>
+                        <li><a href="#">BEEM 420</a></li>
+                        <li><a href="#">Mport 6c</a></li>
+                        <li><a href="#">DECIBEL 23</a></li>
+                        <li><a href="#">Harmonics Twins S9</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="grodiv"><a href="#">
+                    <p class="fashion">Corporate Gifting</p>
+                </a>
+            </li>
+
+            <li class="grodiv"><a href="#">
+                    <p class="electronics">Warranty Registration</p>
+                </a>
+            </li>
+
+            <li class="grodiv"><a href="#">
+                    <p>Support</p>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="backgroundimg">
+        <img src="../static/images/Website_Banner_Decible23-03_1_1920x.webp" alt="" height="800px" width="100%">
+    </div><br><br>
+
+    <nav>
+        <a href="#">Blogs</a>
+        <a href="#">Support</a>
+        <a href="#">Track Your Order</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">E-Waste Management</a>
+        <a href="#">Term and Condition</a>
+        <a href="#">CSR Policy</a>
+        <a href="#">Warranty, Return & Refund</a>
+        <a href="#">About Us</a>
+        <a href="#">Became Partner</a>
+        <a href="#">Brochure</a>
+    </nav><br><br>
+
+    <footer class="lo">
+        <a href=""><img src="../static/images/instagram.webp" alt=""></a>
+        <a href=""><img src="../static/images/facebook.webp" alt=""></a>
+        <a href=""><img src="../static/images/linkedin.png" alt=""></a>
+        <a href=""><img src="../static/images/youtube.png" alt=""></a>
+
+    </footer>
+</body>
+
+</html>

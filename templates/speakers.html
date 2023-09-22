@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accessories</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://kit.fontawesome.com/8b134085b2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="bg">
+        <img src="../static/images/sound.webp" alt="" height="795px" width="100%">
+        <h1>Speakers</h1>
+    </div>
+
+        <div class="header">  
+            <h1>Speakers</h1>
+            <input type="text" placeholder="Search for products and more" class="search1">
+            <button type="submit" class="glass1"><i class="fa-solid fa-magnifying-glass" style="color: black;"></i></button>
+            <p  class="icon"><i class="fa-solid fa-cart-shopping" style="color: black;"></i> </p>
+            <a href="{{url_for('portronics')}}" class="homie"><i class="fa-solid fa-house"></i></a>
+        </div> 
+
+        <div class="products">
+            <div class="speakers">
+                <h1>SoundDrum 1</h1>
+                <img src="../static/images/sound drum 1.webp" alt="" height="150px" width="150px">
+
+                <h3>Add Item</h3>
+                <div class="addsub">
+                    <form action="/operate/1/decrement" method="post"><button type="submit">-</button></form>
+                    <h1>{{count1}}</h1>
+                    <form action="/operate/1/increment" method="post"><button type="submit">+</button></form>  
+                </div>
+            </div>
+
+            <div class="speakers">
+                <h1>Talk two</h1>
+                <img src="../static/images/Talk two.webp" alt="" height="150px" width="150px">
+
+                <h3>Add Item</h3>
+                <div class="addsub">
+                    <form action="/operate/2/decrement" method="post"><button type="submit">-</button></form>
+                    <h1>{{count2}}</h1>
+                    <form action="/operate/2/increment" method="post"><button type="submit">+</button></form>
+                    
+                </div>
+            </div>
+
+            <div class="speakers">
+                <h1>Resound 2</h1>
+                <img src="../static/images/Resound 2.webp" alt="" height="150px" width="150px">
+                <h3>Add Item</h3>
+                <div class="addsub">
+                    <form action="/operate/3/decrement" method="post"><button type="submit">-</button></form>
+                    <h1>{{count3}}</h1>
+                    <form action="/operate/3/increment" method="post"><button type="submit">+</button></form>
+                    
+                </div>
+
+            </div>
+        </div>
+</body>
+</html>
+
+
+
